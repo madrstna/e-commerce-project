@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //3->1500 EGP
+        //4 ->2000 EGP
+        //5 ->3000 EGP
+        //default 
+        let stars=prompt("Enter the number of stars");
+        let price;
+        switch(stars){
+            case '3':
+                alert("your 3 stars hotel will cost 1500 EGP");
+                price=1500;
+                break;
+            case '4':
+                alert("your 3 stars hotel will cost 2000 EGP");
+                price= 2000;
+                break;
+            case '5':
+                alert("your 3 stars hotel will cost 3000 EGP");
+                price= 3000;
+                break;
+            default:
+                alert("insert a valid data");
+        }
+        if(typeof(price)!="undefined"){
+            days=prompt("please enter number of days");
+            alert("total cost = "+days*price);
+        }
+
+    </script>
+</body>
+</html>
